@@ -1,0 +1,227 @@
+@font-face {
+    
+    font-family: "Michroma";
+    src: url(../fonts/Michroma-Regular.ttf);
+}
+a{
+    font-family: "Michroma";
+    color:beige
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(34, 31, 31);
+    justify-content: space-between;
+}
+
+.Header-Index{
+    color: rgb(9, 139, 253);
+    display: flex;
+    width: 23%;
+    height: auto;
+    font-weight:900;
+    text-size-adjust:initial ;
+    
+}
+.inputlogin{
+    width: 500px;
+}
+
+a{ color: rgb(230, 200, 70);
+
+}
+.input-index{
+    size: end;
+    text-align: center;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header1{
+    display: flex;
+    background-color:rgb(34, 31, 31);
+    flex-direction: row;
+    justify-content: space-around;
+    size-adjust:end;
+}
+.IndexSearch{
+
+    display: flex;
+    flex-direction:column-reverse;
+    width: 500px;
+    justify-content: center;
+   
+}
+.contentindex{
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color:rgb(34, 31, 31);
+    height: 40px;
+    align-items: center;
+     
+}
+
+
+#imagen-index{
+    width: 1900px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.mondraker.com/storage/cache/images/e93/1673873302-2560_63c5479682bba616524856-chrono-dc-mtb-bike-mondraker-14.jpg)
+
+}
+.article1{
+    flex: flex ;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.mondraker.com/storage/cache/images/e93/1673873302-2560_63c5479682bba616524856-chrono-dc-mtb-bike-mondraker-14.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+#textodeimagen{
+    color: rgb(36, 27, 4);
+    font-family: "Michroma";
+    src: url(../fonts/Michroma-Regular.ttf);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 60%;
+    font-weight: 1000;
+    margin-top: 100px;
+    
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#article2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex:1 1 auto;
+
+
+
+}
+
+
+#BicicletasIndex{
+    margin: 1%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://dcdn.mitiendanube.com/stores/002/183/781/products/marlin-5-gn21-38a84d914214c2f0d516560060430405-640-0.webp);
+
+}
+
+input{
+    margin: 10px;
+}
+
+#Registrarse1{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+#MarcasIndex{
+    margin: 1%;  
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://biciclub.com/wp-content/uploads/2021/04/sunpeed-rock-platinium.jpg);
+}
+
+ 
+ #IndumentariaIndex {
+    margin: 1%;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.broni.com.ar/img/articulos/guantes_ciclismo_giro_bravo_gel_8_thumb3.jpg);
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding-bottom: 12%;
+    min-height: 100vh;
+}
+    
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(34, 31, 31);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+    bottom: 0;
+
+    
+}
+#facebook{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://cdn-icons-png.flaticon.com/256/124/124010.png);
+    height: 50px;
+    width: 50px;
+}
+#whatsapp{
+    background-image: url(https://w7.pngwing.com/pngs/909/209/png-transparent-whatsapp-logo-whatsapp-computer-icons-logo-email-instant-messaging-social-network-trademark-grass-sign-thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+#instagram{
+    background-image: url(https://c0.klipartz.com/pngpicture/704/270/gratis-png-inicio-de-sesion-en-redes-sociales-instagram-ig-icono-de-instagram.png);
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+.Marcas-img{
+    margin-left:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    height: 500px;
+    width: 750px;
+}
+
