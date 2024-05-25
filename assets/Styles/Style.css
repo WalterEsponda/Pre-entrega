@@ -3,6 +3,12 @@
     font-family: "Michroma";
     src: url(../fonts/Michroma-Regular.ttf);
 }
+
+.Logo {
+
+    font-size: xx-large;
+
+}
 a{
     font-family: "Michroma";
     color:beige
@@ -10,7 +16,7 @@ a{
 header{
     display: flex;
     flex-direction: row;
-    background-color:rgb(34, 31, 31);
+    background-color:rgb(24, 22, 22);
     justify-content: space-between;
 }
 
@@ -62,9 +68,11 @@ a{ color: rgb(230, 200, 70);
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
-    background-color:rgb(34, 31, 31);
+    background-color:rgb(87, 82, 82);
     height: 40px;
     align-items: center;
+    font-size:x-large;
+    font-weight: 800;
      
 }
 
@@ -228,7 +236,7 @@ footer {
     width: 750px;
     border-style: solid;
     border-color: aliceblue;
-    border-width: 800px;
+    
 }
 
 #ProductosBicicletas{
@@ -277,5 +285,21 @@ footer {
 .BotonCompra{
 
     width: 200px;
+
+}
+@media (max-width: 399px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 25vh 25vh 25vh 25vh;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh
+    }
+
+    header {
+
+        grid-area: header;
+    }
+
+
 
 }
