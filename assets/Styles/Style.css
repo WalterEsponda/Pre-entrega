@@ -4,6 +4,10 @@
     src: url(../fonts/Michroma-Regular.ttf);
 }
 
+.navbar{
+    display: none;
+}
+
 .Logo {
 
     font-size: xx-large;
@@ -87,14 +91,15 @@ a{ color: rgb(230, 200, 70);
 
 }
 .article1{
-    flex: flex ;
     width: 100%;
-    height: 700px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     background-image: url(https://cdn.mondraker.com/storage/cache/images/e93/1673873302-2560_63c5479682bba616524856-chrono-dc-mtb-bike-mondraker-14.jpg);
     background-size: cover;
     background-position: center;
+    padding: 5px;
+    margin-bottom: 15px;
     
     
 }
@@ -122,26 +127,25 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    flex:1 1 auto;
-
-
-
-}
-
-
-#BicicletasIndex{
-    margin: 1%;
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-image: url(https://dcdn.mitiendanube.com/stores/002/183/781/products/marlin-5-gn21-38a84d914214c2f0d516560060430405-640-0.webp);
+    margin-top: 20px;
+
+
 
 }
+/*.categorias{
+    margin: 30px;
+}*/
+
+.imagencategoria{
+    display: flex;
+    width: 600px;
+    height: 450px;
+}
+
+
+
 
 input{
     margin: 10px;
@@ -155,34 +159,53 @@ input{
     align-content: center;
 }
 
+#Bicicletas{
+    margin: 1%;
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+    border: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    /*background-image: url(https://dcdn.mitiendanube.com/stores/002/183/781/products/marlin-5-gn21-38a84d914214c2f0d516560060430405-640-0.webp);*/
+
+}
+
 #MarcasIndex{
     margin: 1%;  
     width: 500px;
-    height: 500px;
+    height: 450px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    background-image: url(https://biciclub.com/wp-content/uploads/2021/04/sunpeed-rock-platinium.jpg);
+    text-align: center;
 }
 
  
  #IndumentariaIndex {
     margin: 1%;
     width: 500px;
-    height: 500px;
+    height: 450px;
+    padding: 10px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: url(https://www.broni.com.ar/img/articulos/guantes_ciclismo_giro_bravo_gel_8_thumb3.jpg);
+    /*background-image: url(https://www.broni.com.ar/img/articulos/guantes_ciclismo_giro_bravo_gel_8_thumb3.jpg);*/
 
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(85, 82, 82);
     color: rgb(255, 255, 255);
     position: relative;
     padding-bottom: 12%;
@@ -220,11 +243,18 @@ footer {
     width: 50px;
 }
 #instagram{
-    background-image: url(https://c0.klipartz.com/pngpicture/704/270/gratis-png-inicio-de-sesion-en-redes-sociales-instagram-ig-icono-de-instagram.png);
+    background-color: rgb(34, 31, 31);
+    /*background-image: url(https://c0.klipartz.com/pngpicture/704/270/gratis-png-inicio-de-sesion-en-redes-sociales-instagram-ig-icono-de-instagram.png);*/
     background-size: cover;
     background-position: center;
     height: 50px;
     width: 50px;
+}
+.instagramlogo{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 31, 31);
+
 }
 .Marcas-img{
     margin-left:50px;
@@ -287,19 +317,97 @@ footer {
     width: 200px;
 
 }
-@media (max-width: 399px) {
+@media (max-width: 400px) {
 
     body {
         display: grid;
-        grid-template-columns: 25vh 25vh 25vh 25vh;
-        grid-template-rows: 20vh 20vh 20vh 20vh 20vh
+        grid-template-columns: 10vh 10vh 70vh 10vh;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "Header Header Header"
+        " search search search"
+        " main main main"
+        "footer footer gooter";
+
     }
 
-    header {
+/**HEADER Area**/
 
-        grid-area: header;
+.input-index{
+
+    display: none;
+}
+
+    Header {
+        justify-content: center;
+
+        display: grid;
+        grid-template-rows:150 150 auto;
+        grid-template-columns: 100px;
+        grid-area: Header;
+        grid-template-areas:
+        "Logo Logo Logo";
+        
+    }
+    .Logo{
+        display: grid;
+        text-align: center;
+        font-size: small;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        grid-area: Logo;
+        
+
     }
 
+    .IndexSearch{
+        grid-area: search;
+    }
+
+/** NAV AREA**/
+.contentindex{
+    display: none;
+}
+.navbar{
+    display: grid;
+    grid-area: nav;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+
+}
+#textodeimagen{
+    display: none;
+}
+.article1{
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    background-image:url(https://d2r9epyceweg5n.cloudfront.net/stores/053/255/rte/bicicletas-mtb-mountain-bike.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    
+    
+}
+
+#article2{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ 
 
 
 }
