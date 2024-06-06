@@ -317,18 +317,30 @@ footer {
     width: 200px;
 
 }
+
+
+
 @media (max-width: 400px) {
 
+    @font-face {
+        font-family: "Michroma";
+        src: url(../fonts/Michroma-Regular.ttf);
+    }
+    
+}
+
+
     body {
+        
         display: grid;
-        grid-template-columns: 10vh 10vh 70vh 10vh;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 12vh 7vh auto 12vh;
         grid-template-areas: 
         
         "Header Header Header"
         " search search search"
         " main main main"
-        "footer footer gooter";
+        "footer footer footer";
 
     }
 
@@ -339,24 +351,27 @@ footer {
     display: none;
 }
 
-    Header {
-        justify-content: center;
-
-        display: grid;
-        grid-template-rows:150 150 auto;
-        grid-template-columns: 100px;
+    .Header1 {
+        background-color: rgb(24, 22, 22);
         grid-area: Header;
-        grid-template-areas:
-        "Logo Logo Logo";
+        display: grid;
+        height: 15vh;
+        width: 100%;
+       grid-template-columns: 10vw 45vw 45vw;
+        grid-template-rows: 200px;
+        grid-template-areas: "search Logo Logo";
+        
         
     }
     .Logo{
-        display: grid;
+        background-color: antiquewhite;
+        height: 10vh;
+        width: 100%;
         text-align: center;
-        font-size: small;
+        font-size: 20px;
         display: flex;
-        flex-wrap: nowrap;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
         grid-area: Logo;
         
 
@@ -364,6 +379,9 @@ footer {
 
     .IndexSearch{
         grid-area: search;
+        display: flex;
+        justify-content: center;
+        width: 80%;
     }
 
 /** NAV AREA**/
@@ -410,4 +428,3 @@ main {
  
 
 
-}
